@@ -1,0 +1,103 @@
+.btn-primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 24px;
+    width: fit-content;
+}
+
+.btn-primary span {
+    padding: 4px 8px;
+}
+
+.btn-large {
+    height: 40px;
+    padding: 12px 16px;
+}
+
+.btn-medium {
+    height: 32px;
+    padding: 8px;
+}
+
+.btn-small {
+    padding: 4px;
+    height: 24px;
+}
+
+.btn-solid {
+    background: #006DE3;
+    color: #FFFFFF;
+}
+
+.btn-outlined {
+    border: 1px solid #006DE3;
+    background: #FFFFFF;
+    color: #006DE3;
+}
+
+.btn-ghost {
+    background: transparent;
+    color: #006DE3;
+}
+
+.btn-text-only {
+    background: none;
+    color: #006DE3;
+}
+
+.btn-solid:hover {
+    background: #006DE3E5;
+}
+
+.btn-solid:focus {
+    border: 2px solid #0057B6;
+}
+
+.btn-solid:active {
+    background: #0057B6;
+    transform: scale(0.95);
+}
+
+.btn-outlined:hover {
+    background: #006DE31A;
+}
+
+.btn-outlined:focus {
+    border: 2px solid #0057B6;
+}
+
+.btn-outlined:active {
+    background: #006DE31A;
+    transform: scale(0.95);
+}
+
+.btn-ghost:hover {
+    background: #006DE30D;
+}
+
+.btn-ghost:focus {
+    border: 1px solid #006DE31A;
+}
+
+.btn-ghost:active {
+    background: #006DE31A;
+    transform: scale(0.95);
+}
+
+.btn-text-only:hover {
+    color: #006DE3B3;
+}
+
+.btn-text-only:focus {
+    border: 1px solid #006DE31A;
+}
+
+.btn-text-only:active {
+    color: #006DE3DB;
+}
