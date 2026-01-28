@@ -1,23 +1,6 @@
 import React, {ReactHTMLElement, ReactNode, useCallback, useMemo} from "react";
+import {ButtonProps} from "../types";
 import './Button.css'
-
-export interface ButtonProps {
-    className?: string;
-    state?: 'solid' | 'outlined' | 'ghost' | 'text-only';
-    size?: 'small' | 'medium' | 'large';
-    onClick?: any;
-    onHover?: any;
-    cursor?: string;
-    styles?: object;
-    isDisabled?: boolean;
-    LeadingIcon?: React.ElementType;
-    TrailingIcon?: React.ElementType;
-    text?: string;
-    title?: string;
-    ariaLabel?: string;
-    tabIndex?: number;
-
-}
 
 const Button: React.FC<ButtonProps> = ({
                                            className,
@@ -65,6 +48,7 @@ const Button: React.FC<ButtonProps> = ({
         }
     }, [isDisabled, onClick]);
 
+
     return (
         <div
             onClick={handleClick}
@@ -72,6 +56,7 @@ const Button: React.FC<ButtonProps> = ({
             style={styles}
             className={buttonClasses}
             title={title}
+            aria-label={ariaLabel}
         >
             {LeadingIcon && <LeadingIcon/>}
             {text && <span>{text}</span>}
